@@ -1,4 +1,5 @@
-﻿using ContactManagerService.Model;
+﻿using ContactManagerService.DB;
+using ContactManagerService.Model;
 using System.Collections.Generic;
 using System.ServiceModel;
 
@@ -12,5 +13,8 @@ namespace ContactManagerService
 
         [OperationContract]
         IEnumerable<Contact> GetFilteredContacts(string predicate);
+
+        [OperationContract]
+        IEnumerable<Employees> GetEmployees();
     }
 }

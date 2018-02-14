@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using ContactManagerService.DB;
 using ContactManagerService.Model;
 
 namespace ContactManagerService
@@ -20,6 +21,17 @@ namespace ContactManagerService
                 contacts = Contact.GetFakeData();
 
             return contacts; 
+        }
+
+        public IEnumerable<Employees> GetEmployees()
+        {
+            IEnumerable<Employees> result = new List<Employees>();
+            using (NorthwindDbContext dbContext = new NorthwindDbContext())
+            {
+                result = dbContext.Employees.ToList();
+            }
+
+            return result;
         }
 
         public IEnumerable<Contact> GetFilteredContacts(string predicate)

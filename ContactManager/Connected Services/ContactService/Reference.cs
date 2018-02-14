@@ -215,6 +215,323 @@ namespace ContactManager.ContactService {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Employees", Namespace="http://schemas.datacontract.org/2004/07/ContactManagerService.DB")]
+    [System.SerializableAttribute()]
+    public partial class Employees : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AddressField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> BirthDateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CityField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CountryField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int EmployeeIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ExtensionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FirstNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<System.DateTime> HireDateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string HomePhoneField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LastNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NotesField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private byte[] PhotoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PhotoPathField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PostalCodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RegionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> ReportsToField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TitleField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string TitleOfCourtesyField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Address {
+            get {
+                return this.AddressField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AddressField, value) != true)) {
+                    this.AddressField = value;
+                    this.RaisePropertyChanged("Address");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> BirthDate {
+            get {
+                return this.BirthDateField;
+            }
+            set {
+                if ((this.BirthDateField.Equals(value) != true)) {
+                    this.BirthDateField = value;
+                    this.RaisePropertyChanged("BirthDate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string City {
+            get {
+                return this.CityField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CityField, value) != true)) {
+                    this.CityField = value;
+                    this.RaisePropertyChanged("City");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Country {
+            get {
+                return this.CountryField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CountryField, value) != true)) {
+                    this.CountryField = value;
+                    this.RaisePropertyChanged("Country");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int EmployeeID {
+            get {
+                return this.EmployeeIDField;
+            }
+            set {
+                if ((this.EmployeeIDField.Equals(value) != true)) {
+                    this.EmployeeIDField = value;
+                    this.RaisePropertyChanged("EmployeeID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Extension {
+            get {
+                return this.ExtensionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ExtensionField, value) != true)) {
+                    this.ExtensionField = value;
+                    this.RaisePropertyChanged("Extension");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string FirstName {
+            get {
+                return this.FirstNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FirstNameField, value) != true)) {
+                    this.FirstNameField = value;
+                    this.RaisePropertyChanged("FirstName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> HireDate {
+            get {
+                return this.HireDateField;
+            }
+            set {
+                if ((this.HireDateField.Equals(value) != true)) {
+                    this.HireDateField = value;
+                    this.RaisePropertyChanged("HireDate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string HomePhone {
+            get {
+                return this.HomePhoneField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.HomePhoneField, value) != true)) {
+                    this.HomePhoneField = value;
+                    this.RaisePropertyChanged("HomePhone");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string LastName {
+            get {
+                return this.LastNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LastNameField, value) != true)) {
+                    this.LastNameField = value;
+                    this.RaisePropertyChanged("LastName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Notes {
+            get {
+                return this.NotesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NotesField, value) != true)) {
+                    this.NotesField = value;
+                    this.RaisePropertyChanged("Notes");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public byte[] Photo {
+            get {
+                return this.PhotoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PhotoField, value) != true)) {
+                    this.PhotoField = value;
+                    this.RaisePropertyChanged("Photo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string PhotoPath {
+            get {
+                return this.PhotoPathField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PhotoPathField, value) != true)) {
+                    this.PhotoPathField = value;
+                    this.RaisePropertyChanged("PhotoPath");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string PostalCode {
+            get {
+                return this.PostalCodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PostalCodeField, value) != true)) {
+                    this.PostalCodeField = value;
+                    this.RaisePropertyChanged("PostalCode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Region {
+            get {
+                return this.RegionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RegionField, value) != true)) {
+                    this.RegionField = value;
+                    this.RaisePropertyChanged("Region");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> ReportsTo {
+            get {
+                return this.ReportsToField;
+            }
+            set {
+                if ((this.ReportsToField.Equals(value) != true)) {
+                    this.ReportsToField = value;
+                    this.RaisePropertyChanged("ReportsTo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Title {
+            get {
+                return this.TitleField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TitleField, value) != true)) {
+                    this.TitleField = value;
+                    this.RaisePropertyChanged("Title");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string TitleOfCourtesy {
+            get {
+                return this.TitleOfCourtesyField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TitleOfCourtesyField, value) != true)) {
+                    this.TitleOfCourtesyField = value;
+                    this.RaisePropertyChanged("TitleOfCourtesy");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ContactService.IContactService")]
     public interface IContactService {
@@ -230,6 +547,12 @@ namespace ContactManager.ContactService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IContactService/GetFilteredContacts", ReplyAction="http://tempuri.org/IContactService/GetFilteredContactsResponse")]
         System.Threading.Tasks.Task<System.Collections.Generic.List<ContactManager.ContactService.Contact>> GetFilteredContactsAsync(string predicate);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IContactService/GetEmployees", ReplyAction="http://tempuri.org/IContactService/GetEmployeesResponse")]
+        System.Collections.Generic.List<ContactManager.ContactService.Employees> GetEmployees();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IContactService/GetEmployees", ReplyAction="http://tempuri.org/IContactService/GetEmployeesResponse")]
+        System.Threading.Tasks.Task<System.Collections.Generic.List<ContactManager.ContactService.Employees>> GetEmployeesAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -273,6 +596,14 @@ namespace ContactManager.ContactService {
         
         public System.Threading.Tasks.Task<System.Collections.Generic.List<ContactManager.ContactService.Contact>> GetFilteredContactsAsync(string predicate) {
             return base.Channel.GetFilteredContactsAsync(predicate);
+        }
+        
+        public System.Collections.Generic.List<ContactManager.ContactService.Employees> GetEmployees() {
+            return base.Channel.GetEmployees();
+        }
+        
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<ContactManager.ContactService.Employees>> GetEmployeesAsync() {
+            return base.Channel.GetEmployeesAsync();
         }
     }
 }

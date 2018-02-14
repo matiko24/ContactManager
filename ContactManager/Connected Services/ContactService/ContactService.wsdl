@@ -5,6 +5,7 @@
       <xsd:import schemaLocation="http://localhost:59221/ContactService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
       <xsd:import schemaLocation="http://localhost:59221/ContactService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
       <xsd:import schemaLocation="http://localhost:59221/ContactService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ContactManagerService.Model" />
+      <xsd:import schemaLocation="http://localhost:59221/ContactService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/ContactManagerService.DB" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IContactService_GetContacts_InputMessage">
@@ -19,6 +20,12 @@
   <wsdl:message name="IContactService_GetFilteredContacts_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetFilteredContactsResponse" />
   </wsdl:message>
+  <wsdl:message name="IContactService_GetEmployees_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployees" />
+  </wsdl:message>
+  <wsdl:message name="IContactService_GetEmployees_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeesResponse" />
+  </wsdl:message>
   <wsdl:portType name="IContactService">
     <wsdl:operation name="GetContacts">
       <wsdl:input wsaw:Action="http://tempuri.org/IContactService/GetContacts" message="tns:IContactService_GetContacts_InputMessage" />
@@ -27,6 +34,10 @@
     <wsdl:operation name="GetFilteredContacts">
       <wsdl:input wsaw:Action="http://tempuri.org/IContactService/GetFilteredContacts" message="tns:IContactService_GetFilteredContacts_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IContactService/GetFilteredContactsResponse" message="tns:IContactService_GetFilteredContacts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployees">
+      <wsdl:input wsaw:Action="http://tempuri.org/IContactService/GetEmployees" message="tns:IContactService_GetEmployees_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IContactService/GetEmployeesResponse" message="tns:IContactService_GetEmployees_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IContactService" type="tns:IContactService">
@@ -42,6 +53,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetFilteredContacts">
       <soap:operation soapAction="http://tempuri.org/IContactService/GetFilteredContacts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployees">
+      <soap:operation soapAction="http://tempuri.org/IContactService/GetEmployees" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

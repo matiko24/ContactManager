@@ -21,6 +21,17 @@ namespace ContactManager.ViewModel
         public async void GetData()
         {
             ContactsList = new ObservableCollection<Contact>(await GetDataFromService());
+            EmployeesList = new ObservableCollection<Employees>(await GetEmployeesFromService());
+        }
+
+        private async Task<List<Employees>> GetEmployeesFromService()
+        {
+            List<Employees> list = new List<Employees>();
+            using (ContactServiceClient client = new ContactServiceClient())
+            {
+                list = await client.GetEmployeesAsync();
+            }
+            return list;
         }
 
         private async Task<List<Contact>> GetDataFromService()
@@ -52,6 +63,9 @@ namespace ContactManager.ViewModel
         
         public ObservableCollection<Contact> ContactsListAll { get; set; }
         public ObservableCollection<Contact> ContactsList { get; set; }
+
+        public ObservableCollection<Employees> EmployeesList { get; set; }
+
 
         public ICommand CloseCommand => new RelayCommand(Close);
 

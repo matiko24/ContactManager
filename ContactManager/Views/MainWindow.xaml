@@ -39,14 +39,13 @@
                 Margin="0,0,0,31"
                 AutoGenerateColumns="False"
                 IsReadOnly="True"
-                ItemsSource="{Binding ContactsList}">
+                ItemsSource="{Binding EmployeesList}">
                 <DataGrid.Columns>
                     <DataGridTextColumn Binding="{Binding FirstName}" Header="Imię" />
                     <DataGridTextColumn Binding="{Binding LastName}" Header="Nazwisko" />
-                    <DataGridTextColumn Binding="{Binding Email}" Header="E-mail" />
-                    <DataGridTextColumn Binding="{Binding Address.Street}" Header="Ulica" />
-                    <DataGridTextColumn Binding="{Binding Address.City}" Header="Miasto" />
-                    <DataGridTextColumn Binding="{Binding Address.ZipCode}" Header="Kod pocztowy" />
+                    <DataGridTextColumn Binding="{Binding Address}" Header="Ulica" />
+                    <DataGridTextColumn Binding="{Binding City}" Header="Miasto" />
+                    <DataGridTextColumn Binding="{Binding PostalCode}" Header="Kod pocztowy" />
                 </DataGrid.Columns>
             </DataGrid>
             <TextBox

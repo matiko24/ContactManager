@@ -26,9 +26,10 @@
   <Metadata>
     <MetadataFile FileName="ContactService.xsd" MetadataType="Schema" ID="668e28a9-7519-49cd-8995-72549c18bdf5" SourceId="1" SourceUrl="http://localhost:59221/ContactService.svc?xsd=xsd1" />
     <MetadataFile FileName="ContactService1.xsd" MetadataType="Schema" ID="1ee98eed-f0e2-4077-b783-3ccf91c7e937" SourceId="1" SourceUrl="http://localhost:59221/ContactService.svc?xsd=xsd0" />
-    <MetadataFile FileName="ContactService.wsdl" MetadataType="Wsdl" ID="d37c73de-762b-45c7-97df-9b1ab8448ef8" SourceId="1" SourceUrl="http://localhost:59221/ContactService.svc?wsdl" />
     <MetadataFile FileName="ContactService.disco" MetadataType="Disco" ID="50c04648-42c9-46ab-9e1f-813ea226a864" SourceId="1" SourceUrl="http://localhost:59221/ContactService.svc?disco" />
     <MetadataFile FileName="ContactService2.xsd" MetadataType="Schema" ID="b4113838-4e40-4204-a705-95d86667712a" SourceId="1" SourceUrl="http://localhost:59221/ContactService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ContactService3.xsd" MetadataType="Schema" ID="284172f8-9af3-488c-85db-6ae846b739e8" SourceId="1" SourceUrl="http://localhost:59221/ContactService.svc?xsd=xsd3" />
+    <MetadataFile FileName="ContactService.wsdl" MetadataType="Wsdl" ID="d37c73de-762b-45c7-97df-9b1ab8448ef8" SourceId="1" SourceUrl="http://localhost:59221/ContactService.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

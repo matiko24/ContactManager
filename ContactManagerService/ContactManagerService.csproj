@@ -41,10 +41,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Faker.Portable, Version=2.6.0.0, Culture=neutral, PublicKeyToken=968d76e55a3a9814, processorArchitecture=MSIL">
       <HintPath>..\packages\Faker.Net.Portable.2.6.0\lib\portable-net40+sl5+win8+wpa81+wp8\Faker.Portable.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -71,6 +79,33 @@
     <Compile Include="ContactService.svc.cs">
       <DependentUpon>ContactService.svc</DependentUpon>
     </Compile>
+    <Compile Include="DB\Alphabetical_list_of_products.cs" />
+    <Compile Include="DB\Categories.cs" />
+    <Compile Include="DB\Category_Sales_for_1997.cs" />
+    <Compile Include="DB\Current_Product_List.cs" />
+    <Compile Include="DB\CustomerDemographics.cs" />
+    <Compile Include="DB\Customers.cs" />
+    <Compile Include="DB\Customer_and_Suppliers_by_City.cs" />
+    <Compile Include="DB\Employees.cs" />
+    <Compile Include="DB\Invoices.cs" />
+    <Compile Include="DB\NorthwindDbContext.cs" />
+    <Compile Include="DB\Orders.cs" />
+    <Compile Include="DB\Orders_Qry.cs" />
+    <Compile Include="DB\Order_Details.cs" />
+    <Compile Include="DB\Order_Details_Extended.cs" />
+    <Compile Include="DB\Order_Subtotals.cs" />
+    <Compile Include="DB\Products.cs" />
+    <Compile Include="DB\Products_Above_Average_Price.cs" />
+    <Compile Include="DB\Products_by_Category.cs" />
+    <Compile Include="DB\Product_Sales_for_1997.cs" />
+    <Compile Include="DB\Region.cs" />
+    <Compile Include="DB\Sales_by_Category.cs" />
+    <Compile Include="DB\Sales_Totals_by_Amount.cs" />
+    <Compile Include="DB\Shippers.cs" />
+    <Compile Include="DB\Summary_of_Sales_by_Quarter.cs" />
+    <Compile Include="DB\Summary_of_Sales_by_Year.cs" />
+    <Compile Include="DB\Suppliers.cs" />
+    <Compile Include="DB\Territories.cs" />
     <Compile Include="IContactService.cs" />
     <Compile Include="Model\Address.cs" />
     <Compile Include="Model\Contact.cs" />
